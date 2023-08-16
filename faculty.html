@@ -1,0 +1,302 @@
+<html>
+
+<head>
+	<link rel="stylesheet" href="style.css">
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+
+		.profile-card {
+			max-width: 400px;
+			margin: 20px auto;
+			border: 1px solid #ccc;
+			padding: 20px;
+			text-align: center;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.profile-pic {
+			width: 150px;
+			height: 150px;
+			border-radius: 50%;
+			margin: 0 auto;
+			overflow: hidden;
+			border: 2px solid #333;
+		}
+
+		.profile-pic img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="profile-container" class="profile-container">
+		<!-- Profile will be populated here -->
+	</div>
+
+	<script>
+		const profileData = {
+			
+			nandini: {
+				name: "nandini",
+				department: "Computer Science",
+
+				about: "M.Sc., M.Tech. Head of the Department",
+				picture: "nandini.png"
+			}
+			// Add more profile data objects as needed
+		};
+
+		// Function to create a profile card
+		function createProfileCard(profile) {
+			const profileCard = document.createElement("div");
+			profileCard.classList.add("profile-card");
+			profileCard.innerHTML = `
+			<div class="profile-pic">
+			  <img src="${profile.picture}" alt="Profile Picture">
+			</div>
+			<h2>${profile.name}</h2>
+			<p>${profile.department}</p>
+			
+			<p> ${profile.about}</p>
+		  `;
+			return profileCard;
+		}
+
+		// Get the profile container element
+		const profileContainer = document.getElementById("profile-container");
+
+		// Example switch case handling different profiles
+
+	</script>
+
+
+	<script language="JavaScript">
+		var name = prompt("enter the faculty name");
+		switch (name) {
+
+			case "nandini":
+				const nandiniProfile = createProfileCard(profileData.nandini);
+				profileContainer.appendChild(nandiniProfile);
+				break;
+			case "aparna": alert("Computer Science Dept.");
+				break;
+			case "kavitha": alert("Computer Science Dept.");
+				break;
+			case "rajeshwari": alert("Computer Science Dept.");
+				break;
+			case "lydia": alert("Computer Science Dept.");
+				break;
+			case "lavanya": alert("Computer Science Dept.");
+				break;
+			case "lydia": alert("Computer Science Dept.");
+				break;
+			case "nirmala": alert("Mathematics Dept./Dean");
+				break;
+			case "saba": alert("Computer Science Dept.");
+				break;
+			case "santoshi": alert("Mathematics  Dept./Dean");
+				break;
+			case "sowjanya": alert("Mathematics Dept.");
+				break;
+			case "japamala": alert("Mathematics Dept.");
+				break;
+			case "gladys": alert("Mathematics Dept.");
+				break;
+			case "deepika": alert("Mathematics Dept.");
+				break;
+			case "sarala": alert("Physics/Electronics Dept.");
+				break;
+			case "radhai": alert("Physics/Electronics Dept./COE");
+				break;
+			case "jaya": alert("Physics/Electronics Dept.");
+				break;
+			case "prashanthi": alert("Physics/Electronics Dept.");
+				break;
+			case "sita": alert("Physics/Electronics Dept.");
+				break;
+			case "srikala": alert("Statistics Dept.");
+				break;
+			case "saisri": alert("Statistics Dept.");
+				break;
+			case "deepika": alert("Statistics Dept.");
+				break;
+			case "sharada": alert("Statistics Dept.");
+				break;
+			case "jyothi": alert("Microbiology Dept.");
+				break;
+			case "naveena": alert("Microbiology Dept.");
+				break;
+			case "t swapna": alert("Microbiology Dept.");
+				break;
+			case "tasneem": alert(" Zoology Dept.");
+				break;
+			case "divya": alert("Zoology Dept.");
+				break;
+			case "juveria": alert(" Zoology Dept.");
+				break;
+			case "kavya": alert(" Zoology Dept.");
+				break;
+			case "poonamdev": alert(" Zoology Dept.");
+				break;
+			case "ushasri": alert(" Dept.");
+				break;
+			case "roja": alert("Botany Dept.");
+				break;
+			case "neeraja": alert("Botany Dept.");
+				break;
+			case "anitha": alert("Botany Dept.");
+				break;
+			case "meena kumari": alert("Nutrition Dept./Dean");
+				break;
+			case "nasreen": alert("Nutrition Dept.");
+				break;
+			case "phani kumari": alert("Nutrition Dept.");
+				break;
+			case "shailaja": alert("Biochemistry Dept.");
+				break;
+
+			case "sadaf": alert("Biochemistry Dept.");
+				break;
+			case "sushma": alert("Biotechnology Dept.");
+				break;
+			case "kethura": alert("Biotechnology Dept.");
+				break;
+			case "venugopal rao": alert("Genetics Dept.");
+				break;
+			case "n swapna": alert("Genetics Dept.");
+				break;
+			case "anuradha": alert("Commerce Dept.");
+				break;
+			case "mahitha": alert("Commerce Dept./Dean");
+				break;
+			case "usharani": alert("Commerce Dept.");
+				break;
+			case "soujanya": alert("Commerce Dept.");
+				break;
+			case "supriya": alert("Commerce Dept.");
+				break;
+			case "suma reddy": alert("Commerce Dept.");
+				break;
+			case "naga suvarchala": alert("Commerce Dept.");
+				break;
+			case "asra sultana": alert("Commerce Dept.");
+				break;
+			case "meena shanthi": alert("Commerce Dept.");
+				break;
+			case "pranathi": alert("Commerce Dept.");
+				break;
+			case "divya kumari": alert("Commerce Dept.");
+				break;
+			case "bharati": alert("Commerce Dept.");
+				break;
+			case "srilatha": alert("Commerce Dept.");
+				break;
+			case "pratibha": alert("Commerce Dept.");
+				break;
+			case "bhavani": alert("Commerce Dept.");
+				break;
+			case "joshna": alert("Commerce Dept.");
+				break;
+			case "syeda zehra": alert("Commerce Dept.");
+				break;
+			case "isha miranda": alert("Commerce Dept.");
+				break;
+			case "sujatha": alert("BBM Dept.");
+				break;
+			case "indira": alert("BBM Dept.");
+				break;
+			case "sucharita": alert("BBM Dept.");
+				break;
+			case "bharadwaj": alert("BBM Dept.");
+				break;
+			case "bhramarasri": alert("Pol Sc Dept.");
+				break;
+			case "lingmila longvah": alert("BBM Dept.");
+				break;
+			case "sunita": alert("Economics Dept.");
+				break;
+			case "monica sharma": alert("Economics Dept.");
+				break;
+			case "meeta joshi": alert("History Dept.");
+				break;
+			case "lavanyanjali": alert("Public Administration Dept.");
+				break;
+			case "manasa": alert("Journalism Dept.");
+				break;
+			case "popydevi": alert("Women Cell");
+				break;
+			case "ratna kumari": alert("UG Library");
+				break;
+			case "ramyasri": alert("Sports Dept.");
+				break;
+			case "pushpalatha": alert("MCA Dept.");
+				break;
+			case "prashanthi": alert("MCA Dept.");
+				break;
+			case "nagalakshmi": alert("MCA Dept.");
+				break;
+			case "santoshiroopa": alert("MCA Dept.");
+				break;
+			case "madhuri": alert("MCA Dept.");
+				break;
+			case "nirmala joycee": alert("MCA Dept.");
+				break;
+			case "keerthi": alert("MBA Dept.");
+				break;
+			case "nagapoornima": alert("MBA Dept.");
+				break;
+			case "mary francina": alert("MBA Dept.");
+				break;
+			case "nirmala priya": alert("MBA Dept.");
+				break;
+			case "vashudha": alert("MCom Dept.");
+				break;
+			case "archana": alert("MCom Dept.");
+				break;
+			case "a suneetha": alert("PG Library");
+				break;
+			case "archana": alert("MCom Dept.");
+				break;
+			case "smitha asthana": alert("Chemistry Dept./IQAC Coordinator");
+				break;
+			case "vijayavalli": alert("Chemistry Dept./Exam Cell ACOE");
+				break;
+			case "aphia": alert("Chemistry Dept.");
+				break;
+			case "sowmya devi": alert("Chemistry Dept.");
+				break;
+			case "beverly": alert("Chemistry Dept.");
+				break;
+			case "nazia": alert("Chemistry Dept.");
+				break;
+			case "ramya": alert("Chemistry Dept.");
+				break;
+			case "vasavi": alert("Chemistry Dept.");
+				break;
+			case "deepthi": alert("Chemistry Dept.");
+				break;
+			case "sunitha david": alert("English Dept.");
+				break;
+			case "revathi": alert("English Dept.");
+				break;
+			case "saritha": alert("English Dept.");
+				break;
+			case "rashmi": alert("English Dept.");
+				break;
+			case "kanaka": alert("English Dept.");
+				break;
+			case "srivani": alert("English Dept.");
+				break;
+			case "pratyusha": alert("English Dept.");
+				break;
+		}
+	</script>
+	</div>
+</body>
+
+</html>
